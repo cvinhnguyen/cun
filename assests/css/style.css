@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    overflow: hidden;
+    margin:0px;
+    padding:0px;
+  }
+  
+  body {
+    position: relative;
+    background: #000;
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }
+  
+
+  #openBtn{position:fixed;
+    top:-10%;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:999;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size: 1.6rem;
+  }
+
+  #openBtn p {
+    margin: .8rem 0;
+    font-weight: bold;
+  }
+
+  #openBtn img {width: 8rem;
+    margin-bottom:24px;
+    animation-name: heartbeat;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0,0,0,1.74);
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+
+  #div_container {
+    width: 500px; 
+    margin: 0 auto; 
+    position: relative; 
+    font-size: 1em;
+  }
+
+  #video1 {
+    display:none;
+    position: absolute; 
+    top: 45%; 
+    left: 50%; 
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .type_words {
+    font-size: 1.25rem; 
+    line-height: 2rem; 
+    color: #fff; 
+    padding: 2rem;
+    display:none;
+  }
+  
+
+  .bg img {
+    width:100%;
+    background-repeat: repeat; 
+    background-position: center; 
+    opacity: 0.0;
+  }
+
+  .centered-div { 
+    position: fixed; 
+    bottom: 10%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    color: #fff;
+    z-index: 999;
+    font-size: 1.6rem; 
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .animated-text {
+    text-shadow: 1px 1px 0px #000, -1px -1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000;
+  }
+
+  @keyframes moveText { 
+    0% { transform: translateY(0); } 
+    50% { transform: translateY(-10px); } 
+    100% { transform: translateY(0); } 
+  }
+
+  @keyframes heartbeat{
+    0%{transform:scale(.95)}
+    100%{transform:scale(.95)}
+    50%{transform:scale(1)}
+  }
+
+  #btn-make {
+    bottom:150px;
+  }
+
+  #btn-make,#div_support {
+    right:22px;
+  }
+
+  .love {
+    color: #e94d58;
+    top: 10px;
+  }
+
+  #love {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 50px;
+  }
